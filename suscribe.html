@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet"> <!-- google fonts-->
+    <title>SUBSCRIBE</title>
+</head>
+<body>
+  <div class="general-grid">
+    <div class="general-header">
+      <ul class="ula">
+        <li><a href="index.html">HOME</a></li> 
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a class="active" href="suscribe.html">SUSCRIBE</a></li>
+        <li><a href="contact.html">CONTACT</a></li> 
+      </ul>
+      <h1>SUBSCRIBE TO US!</h1>
+    </div> <!-- termina el general header-->
+    
+    <div class="general-main">
+      <p style="text-align: center;font-size: large;margin-left: 5%;margin-right: 5%;"><i><strong>Why should I sucribe?</strong></i> Always be informed about the list of products and prices, 
+        Be the first to know about our new productions (always with the products of the season).
+        You will be entered in our monthly sweepstakes for subscribers to win different products,
+        free shipping, and many many more...</p>
+      <br />
+ 
+<!-- --------------------------------AQUI EMPIEZA LA ENTRADA DE DATOS PARA SUSCRIBIRSE-------------------------->
+      <div class="container">
+        <form style="margin-top: 2%;" action="/submit.html" target="_blank">
+        <div class="row">
+         
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your Full Name..">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-75">
+            <input type="text" id="cname" name="compname" placeholder="Your company Name..">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Please enter your e-mail...">
+          </div>
+        </div>
+       <!--------------------------------------------COUNTRY SELECT BOX--------------------------------------------->
+        <div class="row">
+          <div class="col-75">
+            <select id="country" name="country">
+              <option value="nocountry">-select your country-</option>
+              <option value="Germany">Germany</option>
+              <option value="Poland">Poland</option>
+              <option value="France">France</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Spain">Spain</option>
+              <option value="Italy">Italy</option>
+              <option value="Switzerland">Switzerland</option>
+              <option value="Sweden">Sweden</option>
+              <option value="United-Kingdom">United Kingdom</option>
+              <option value="Czech Republic">Czech Republic</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Finland">Finland</option>
+             
+            </select>
+          </div>
+        </div> <br />
+        <!--  --------------- -------------------- START CHECKBOX & RADIO ---------------------------------- -->
+     
+        <div class="checkradio"> 
+          <div class="check">
+            <h4>Subscribe to:</h4><br />
+            <label class="containersub">Mensual new catalog<input type="checkbox" checked="checked"> <span class="checkmark"></span></label>
+            <label class="containersub">Promotions & Discounts<input type="checkbox"><span class="checkmark"></span></label>
+            <label class="containersub">Information Mails<input type="checkbox"><span class="checkmark"></span></label>
+            <label class="containersub">Raffles<input type="checkbox"><span class="checkmark"></span></label>
+          </div>
+                
+          <div class="radio2">
+            <h4>Gender:</h4><br />
+            <label class="containersub2">Male<input type="radio" checked="checked" name="radio"><span class="checkmark2"></span></label>
+            <label class="containersub2">Female<input type="radio" name="radio"><span class="checkmark2"></span></label>
+            <label class="containersub2">Do not specify<input type="radio" name="radio"><span class="checkmark2"></span></label>
+          </div>
+        </div>  <!--cierra checkradio-->
+        <!--  --------------- -------------------- END CHECKBOX & RADIO ---------------------------------- -->
+        <div class="row">
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> 
+          </div>
+        </div>
+            
+          <p style="margin-left:6%"><i>(*) By signing up, you agree to our </i> <strong><a href="Privacy-terms.html">Terms, Data & Cookies Policy</a></strong></p>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div> <!-- termina el general main-->
+    <!-------------------------------------------------START FOOTER-------------------------------------------------------------->
+      <div class="general-footer">
+        <p>®Piehole Berlin --- © 1986 - 2023 ---  <a href="Privacy-Terms.html">Privacy & Terms</a> --- <a href="contact.html">Contact</a> - <a href="suscribe.html">Suscribe</a></p>
+      </div> <!-- termina class general-footer-->
+
+    </div> <!--termina general grid-->
+</body>
+</html>
