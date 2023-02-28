@@ -1,0 +1,562 @@
+*{  /* Takes all marfin out from all pages (*) */
+  margin: 0;
+  padding: 0; 
+}
+/*-------------------------------------------BODY AND HEADERS (H1; H2; H4) STYLO AND FORMAT-------------------------------*/
+
+body{background-color: rgba(152, 255, 152, 0.5);
+  font-family: Arial, Helvetica, sans-serif;
+   /* Cambia el color de fondo de todos los bodys*/
+}
+
+h1{
+  font-size: xxx-large;
+text-align: center;
+margin-top: 20px;
+font-family: 'Hachi Maru Pop', cursive;
+}
+
+h2{
+  font-size: x-large;
+text-align: center;
+font-family: 'Hachi Maru Pop', cursive;
+}
+
+h4 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*-----------------------------------GENERAL GRID THAT AFFECTED ALL PAGES--------------------------------------*/
+.general-grid{
+  display: grid;
+  grid-template-rows: 50px auto 50px;   /*GENERAL GRID ONE*/
+  grid-template-areas: "header"
+  "main"
+  "footer";
+   gap: 10%;
+}
+.general-grid2{
+  display: grid;
+  grid-template-rows: 50px auto 50px;    /*GENERAL GRID TWO*/
+  grid-template-areas: "header"
+  "main"
+  "footer";
+   gap: 3%;
+}
+
+.general-header{
+grid-area: header;                         /*GENERAL HEADER*/
+justify-items:stretch;
+}
+
+.general-main{
+grid-area: main;                            /*GENERAL MAIN*/
+width: 100%;
+margin: 0%;
+position: relative;
+
+}
+
+.general-footer{
+grid-area: footer;
+bottom: 0%;
+font-size: small;
+opacity: 0.3;                                  /*GENERAL FOOTER*/
+align-content: center;
+text-align: center;
+position: relative;
+width: 100%;
+} 
+/*--------------------------------------------CREATING NAVIGATION BAR STYLE-----------------------------------------*/
+
+ul.ula { /* style navigation bar*/
+    list-style-type:none;
+    overflow:hidden;
+    background-color: #333;
+  }
+
+ li{                      /*hace que la navigation bar sea horizontal*/
+  float:left;
+} 
+
+  li a { /* style navigation bar*/
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover { /*que resalten las opciones cuando pasa el cursor en la navigation bar */
+    background-color: #111;
+  }
+  .active {
+    background-color: #04AA6D; /*resalta la pagina actual en la navigation bar */
+  }
+/*-----------------------------------------------------------------------------------------------------------------------*/
+  iframe { /* le da formato a la ventana de googlemaps*/
+    display: block;
+    width: 100%;
+  }
+/*   --------------------------------------------------------PRICE LIST TABLE------------------------------------------*/
+
+  table { /*Le da formato a la tabla de precios*/
+    font-family: arial, sans-serif;
+    border-collapse:collapse;
+    width: 50%;
+    margin-top: 2rem;
+    margin-left: 27rem;
+   }
+  
+  td, th { /*Le da formato a la tabla de precios*/
+    border: 2px solid #000000;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {/*Le da formato a la tabla de precios*/
+    background-color: #afadad;
+  }
+
+th {/*Le da formato a la tabla de precios*/
+font-size: larger;
+}
+/*---------------------------------------------FORMAT TO THE LIST IN TERMS & CONDITION------------------------------*/
+ul.lista {
+margin-left: 5%;
+}
+
+ul.lista li{ /* Le doy formato a la lista en "suscribe" */
+    float:none;
+    text-align: left;
+    list-style-type:square;
+}
+/* ----------------------------------------STYLE AND FORMAT TO SUBSCRIBE SECTION-----------------------------------*/
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float:right;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  position: static;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  margin-inline-start: 7%;
+  margin-inline-end:7%;
+  padding: 1px;
+}
+
+.col-75 {
+  float: left;
+  border-radius: 10px;
+  margin-left: 5%;
+  width: 180%;
+  margin-top: 0.2%;
+  padding: 0.5%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+    input[type=submit] {
+    width: 95%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .col-75 {
+    width: 180%;
+  }
+  h1{
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Hachi Maru Pop', cursive;
+  }
+  label.containersub, label.containersub2{
+    font-size: smaller;
+    padding-bottom: 8%;
+    padding-left: 25%;
+  }
+  
+  .checkradio {
+    font-size: small;
+  }
+}
+/*-------------------------Estilo del boton en página "submit"--------------------------------------------*/
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 40px 900px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/*-------------------------------------------------CHECKBOXES STYLE-------------------------------------------*/
+/*-----Creating grid for have checks and radio in 2 diferents columns but same row---------------------------*/
+
+.checkradio {
+  display: grid;
+  grid-template-columns: 2fr 2fr;    /*GRID FOR CHECK BOXES AND RADIOS*/
+  grid-template-rows: auto;
+  gap: 20px 20px;
+  margin: 2%;
+}
+
+div.check {
+  grid-column: 1;
+  grid-row: 1;
+  position:static;              /* DIV ONLY FOR THE CHECKBOXES*/
+  width: 70%;
+  margin-left: 10%;
+}
+
+div.radio2{
+  grid-row: 1;
+  grid-column: 2;               /* DIV ONLY FOR THE RADIOS*/
+  position:static;
+}
+
+/* The container */
+.containersub {
+  display: block;
+  position: relative;
+  padding-left: 35px;              /* CONTAIRNER FOR THE FORM IN SUBSCRIPTION*/
+  margin-bottom: 1%;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+ }
+
+/* Hide the browser's default checkbox */
+.containersub input {
+  position: absolute;
+  padding-left: 35px;              /* IMPUT/BUTTOM IN SUBSCRIPTION*/
+  opacity: 0;                           
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;                              /*CUSTOM CHECKBOXES----STYLO*/
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.containersub:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containersub input:checked ~ .checkmark {
+  background-color: rgba(50, 300, 200, 1);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containersub input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containersub .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*----------------------------------- END CHECKBOXES STYLE // START RADIO STYLE ----------------------------------------*/
+
+/* The container */
+.containersub2 {
+  display: block;
+  position: relative;
+  padding-left: 15%;
+  margin-bottom: 1%;
+
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containersub2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark2 {
+  position:absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.containersub2:hover input ~ .checkmark2 {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.containersub2 input:checked ~ .checkmark2 {
+  background-color: rgba(50, 300, 200, 1);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containersub2 input:checked ~ .checkmark2:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containersub2 .checkmark2:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+/* ------------------------------------------- STYLE FOR THE GRID SECTION ON INDEX PAGE ---------------------------------------*/
+.containerindex {
+  padding: 64px;
+}
+
+.rowindex:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.buttonindex {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+/*---------------------------------- STYLE AND GRID ON PRODUCTS PAGE-----------------------------------------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.general-container{
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: auto auto auto;      /* DECLARED THE GRID FOR THE PRODUCT PAGE*/
+  grid-template-areas: "main main main"
+  "main main main"
+  "main main main";
+  gap: 20px 20px;
+  margin: 2%;
+}
+
+.columnpro {
+  float: left;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.cardpro {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  width: 100%;
+}
+
+.containerpro{
+  padding: 0 16px;
+}
+
+.containerpro::after, .rowpro::after {
+  content: "";
+  clear: both;
+}
+
+.titlepro {
+  color: grey;
+}
+@media screen and (max-width: 1300px) {
+  .general-container{
+    display: grid;                                  /*MEDIA QUERY FOR PRODUCT PAGE; BETWEEN 700px AND 1300px*/
+    grid-template-columns: 3fr 3fr ;
+    grid-template-rows: auto auto;
+    grid-template-areas: "main main"
+    "main main"
+    "main main";
+    gap: 1px 10px;
+    margin: 2%;
+    }
+ .columnpro {
+    width: 100%;
+    display: block;
+  }
+
+  @media screen and (max-width:700px) { 
+    .general-container{
+      display: grid;
+      grid-template-columns: auto;          /*MEDIA QUERY FOR PRODUCT PAGE; UNDER 700px */
+      grid-template-rows: auto;
+      grid-template-areas: "main"
+      "main"
+      "main";
+      gap: 1px 10px;
+      margin: 2%;
+      display: block;
+  }
+  }
+}
+
+/*-------------------------------------------------SOME STYLO FOR THE TERMS PAGE---------------------------------------------------*/
+.terminos{
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contactus {
+display: grid;
+grid-template-columns: 2fr 2fr;    /*GRID FOR google and social media*/
+grid-template-rows: auto 250px;
+
+}
+div.google{
+  grid-column: 1;
+  grid-row: 1;
+  position:static;              /* DIV ONLY FOR THE GOOGLE*/
+  width: 70%;
+  margin-left: 10%;
+}
+div.social{
+  grid-column: 2;
+  grid-row: 1;
+  position:static;              /* DIV ONLY FOR THE SOCIAL MEDIA*/
+  width: 70%;
+  padding: 5%;
+  justify-self: center;
+  align-self: center;
+}
+div.emptyspace {
+grid-column-start: 1;
+  grid-row: 2;
+  margin-bottom: 20%;
+ 
+}
